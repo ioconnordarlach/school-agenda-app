@@ -1,0 +1,17 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+section {
+    background: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input, button, select {
+    padding: 8px;
+    margin: 5px;
+}
