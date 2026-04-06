@@ -1,6 +1,65 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-   Prototype Placeholder 
-</head> 
-<body> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Agenda App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <select id="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+    </select>
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" style="display:none;">
+
+    <h1>School Agenda</h1>
+
+    <!-- CALENDAR -->
+    <section>
+        <h2>Calendar</h2>
+        <p id="dateDisplay"></p>
+    </section>
+
+    <!-- TO-DO LIST -->
+    <section>
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- ANNOUNCEMENTS -->
+    <section>
+        <h2>Announcements</h2>
+        <p>Exam on Friday</p>
+        <p>School closed next Monday</p>
+    </section>
+
+    <!-- MESSAGING -->
+    <section>
+        <h2>Messaging</h2>
+        <input type="text" id="messageInput" placeholder="Type a message">
+        <button onclick="sendMessage()">Send</button>
+        <div id="messages"></div>
+    </section>
+
+    <!-- NEWS -->
+    <section>
+        <h2>News</h2>
+        <p>School: Sports day coming soon!</p>
+        <p>Global: Technology is advancing rapidly.</p>
+    </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
